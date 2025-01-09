@@ -10,6 +10,8 @@
   }
 
 
+  
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -851,3 +853,42 @@
   /* .contact .php-email-form button[type=submit]:hover {
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
   } */
+
+
+  #processLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Spinner styles */
+.processSpinner {
+    border: 16px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #f3ed3e;
+    border-radius: 50%;
+    width: 200px;  /* Adjusting the width */
+    height: 200px; /* Adjusting the height */
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Disable interactions during loading */
+body.loading {
+    pointer-events: none;
+}

@@ -5,8 +5,35 @@
     <meta charset="utf-8">
     <title>Empire SoftTech</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta
+        content="empire, softtech, softech, empiresofttech, empire softech, web development, mobile app development, IT solutions, software development, digital marketing, tech solutions, remote services, Kannad, Maharashtra"
+        name="keywords">
+    <meta name="description"
+        content="Empire Softtech - Innovating IT solutions with expertise in web development, mobile apps, software, and digital marketing. Your trusted partner for cutting-edge technology.">
+
+
+    <meta name="author" content="Empire Softtech">
+    <meta name="robots" content="index, follow">
+    <!-- https://empiresofttech.tech/img/logo.png -->
+    <!-- logo-black-crop.png -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Empire Softtech - Innovating the Future">
+    <meta property="og:description"
+        content="Empire Softtech provides innovative IT solutions, including web development, software, and digital marketing services.">
+    <meta property="og:url" content="https://empiresofttech.tech/">
+    <meta property="og:image" content="https://empiresofttech.tech/img/logo-black-crop.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Empire Softtech - Innovating the Future">
+    <meta name="twitter:description"
+        content="Innovative IT solutions in web and software development by Empire Softtech.">
+    <meta name="twitter:image" content="https://empiresofttech.tech/img/logo-black-crop.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://empiresofttech.tech/">
 
     <!-- Favicons -->
     <link href="./img/logoEblack.svg" rel="icon">
@@ -215,6 +242,9 @@
     </div>
     <!-- Fact End -->
 
+    <div id="processLoader" style="display: none;">
+        <div class="processSpinner"></div>
+    </div>
 
     <!-- Contact Start -->
     <div class="container-fluid py-5 mt-5">
@@ -279,24 +309,24 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                        <div class="p-5 rounded contact-form bg-warning">
+                        <form class="p-5 rounded contact-form bg-warning" onsubmit="event.preventDefault(); contactFormContactPage();">
                             <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
+                                <input type="text" class="form-control border-0 py-3" id="name" placeholder="Your Name" class="form-control">
                             </div>
                             <div class="mb-4">
-                                <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
+                                <input type="email" class="form-control border-0 py-3" id="email" placeholder="Your Email">
                             </div>
                             <div class="mb-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Project">
+                                <input type="text" class="form-control border-0 py-3" id="subject" placeholder="Subject">
                             </div>
                             <div class="mb-4">
-                                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
+                                <textarea class="w-100 form-control border-0 py-3" rows="6" id="message" cols="10"
                                     placeholder="Message"></textarea>
                             </div>
                             <div class="text-start">
-                                <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
+                                <button class="btn bg-primary text-white py-3 px-5" type="submit">Send Message</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

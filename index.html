@@ -5,8 +5,35 @@
     <meta charset="utf-8">
     <title>Empire SoftTech</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta
+        content="empire, softtech, softech, empiresofttech, empire softech, web development, mobile app development, IT solutions, software development, digital marketing, tech solutions, remote services, Kannad, Maharashtra"
+        name="keywords">
+    <meta name="description"
+        content="Empire Softtech - Innovating IT solutions with expertise in web development, mobile apps, software, and digital marketing. Your trusted partner for cutting-edge technology.">
+
+
+    <meta name="author" content="Empire Softtech">
+    <meta name="robots" content="index, follow">
+    <!-- https://empiresofttech.tech/img/logo.png -->
+    <!-- logo-black-crop.png -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Empire Softtech - Innovating the Future">
+    <meta property="og:description"
+        content="Empire Softtech provides innovative IT solutions, including web development, software, and digital marketing services.">
+    <meta property="og:url" content="https://empiresofttech.tech/">
+    <meta property="og:image" content="https://empiresofttech.tech/img/logo-black-crop.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Empire Softtech - Innovating the Future">
+    <meta name="twitter:description"
+        content="Innovative IT solutions in web and software development by Empire Softtech.">
+    <meta name="twitter:image" content="https://empiresofttech.tech/img/logo-black-crop.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://empiresofttech.tech/">
 
     <!-- Favicons -->
     <link href="./img/logoEblack.svg" rel="icon">
@@ -609,8 +636,9 @@
                                 <img src="./img/expertTeam.jpg" class="img-fluid w-100 rounded-circle" alt="">
                             </div>
                             <div class="team-name text-center py-3">
-                                <h4 class="">Expert Team                                </h4>
-                                <p class="m-0">Work with a team of skilled professionals dedicated to delivering excellence.</p>
+                                <h4 class="">Expert Team </h4>
+                                <p class="m-0">Work with a team of skilled professionals dedicated to delivering
+                                    excellence.</p>
                             </div>
 
                         </div>
@@ -620,11 +648,13 @@
                     <div class="team-content">
                         <div class="team-img-icon">
                             <div class="team-img rounded-circle">
-                                <img src="./img/CustomerCentricApproach.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                <img src="./img/CustomerCentricApproach.jpg" class="img-fluid w-100 rounded-circle"
+                                    alt="">
                             </div>
                             <div class="team-name text-center py-3">
                                 <h4 class="">Customer-Centric Approach</h4>
-                                <p class="m-0">Your success is our priority, and we ensure your satisfaction at every step.</p>
+                                <p class="m-0">Your success is our priority, and we ensure your satisfaction at every
+                                    step.</p>
                             </div>
 
                         </div>
@@ -634,11 +664,13 @@
                     <div class="team-content">
                         <div class="team-img-icon">
                             <div class="team-img rounded-circle">
-                                <img src="./img/ComprehensiveServices.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                <img src="./img/ComprehensiveServices.jpg" class="img-fluid w-100 rounded-circle"
+                                    alt="">
                             </div>
                             <div class="team-name text-center py-3">
                                 <h4 class="">Comprehensive Services</h4>
-                                <p class="m-0">From web development to digital marketing, we provide end-to-end solutions.</p>
+                                <p class="m-0">From web development to digital marketing, we provide end-to-end
+                                    solutions.</p>
                             </div>
 
                         </div>
@@ -868,7 +900,7 @@
                             <div class="info-item" data-aos="fade" data-aos-delay="300">
                                 <i class="bi bi-telephone text-primary"></i>
                                 <h3>Call Us</h3>
-                                <p>+91 95610 51485</p>
+                                <p>+91 94219 24511</p>
                                 <!-- <p>+1 6678 254445 41</p> -->
                             </div>
                         </div><!-- End Info Item -->
@@ -895,34 +927,38 @@
 
                 </div>
 
+                <div id="processLoader" style="display: none;">
+                    <div class="processSpinner"></div>
+                </div>
+
                 <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                        data-aos-delay="200">
+                    <form class="php-email-form" data-aos="fade-up"
+                        data-aos-delay="200"  onsubmit="event.preventDefault(); contactForm();" >
                         <div class="row gy-4">
 
                             <div class="col-md-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                <input type="text" name="nameIndex" id="nameIndex" class="form-control" placeholder="Your Name" required="">
                             </div>
 
                             <div class="col-md-6 ">
-                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                <input type="email" class="form-control" id="emailIndex" name="emailIndex" placeholder="Your Email"
                                     required="">
                             </div>
 
                             <div class="col-12">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                <input type="text" class="form-control" id="subjectIndex" name="subjectIndex" placeholder="Subject"
                                     required="">
                             </div>
 
                             <div class="col-12">
-                                <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                <textarea class="form-control" id="messageIndex" name="messageIndex" rows="6" placeholder="Message"
                                     required=""></textarea>
                             </div>
 
                             <div class="col-12 text-center">
                                 <!-- <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
                                 <button type="submit" class="btn btn-warning rounded-pill px-5 py-3 text-white">Send
                                     Message</button>
@@ -969,13 +1005,17 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="h3 text-warning">Short Link</a>
                     <div class="mt-4 d-flex flex-column short-link">
-                        <a href="about.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>About
+                        <a href="about.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>About
                             us</a>
-                        <a href="contact.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Contact
+                        <a href="contact.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Contact
                             us</a>
-                        <a href="service.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Our
+                        <a href="service.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Our
                             Services</a>
-                        <a href="project.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Our
+                        <a href="project.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Our
                             Projects</a>
                         <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Latest
                             Blog</a> -->
@@ -984,13 +1024,17 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="h3 text-warning">Help Link</a>
                     <div class="mt-4 d-flex flex-column help-link">
-                        <a href="404.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Terms Of
+                        <a href="404.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Terms Of
                             use</a>
-                        <a href="404.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Privacy
+                        <a href="404.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Privacy
                             Policy</a>
-                        <a href="404.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>Helps</a>
-                        <a href="404.html" class="mb-2 text-white"><i class="fas fa-angle-right text-warning me-2"></i>FQAs</a>
-                        
+                        <a href="404.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>Helps</a>
+                        <a href="404.html" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-warning me-2"></i>FQAs</a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -1000,7 +1044,8 @@
                                 class="fas fa-map-marker-alt text-warning me-2"></i> Kannad, MH</a>
                         <a href="#" class="py-3 text-light border-bottom border-primary"><i
                                 class="fas fa-phone-alt text-warning me-2"></i> +91 94219 24511</a>
-                        <a href="mailto:contact.empiresofttech@gmail.com" class="py-3 text-light border-bottom border-primary"><i
+                        <a href="mailto:contact.empiresofttech@gmail.com"
+                            class="py-3 text-light border-bottom border-primary"><i
                                 class="fas fa-envelope text-warning me-2"></i> contact.empiresofttech<br>@gmail.com
                         </a>
                     </div>
