@@ -892,3 +892,18 @@
 body.loading {
     pointer-events: none;
 }
+
+.responsive-form-container {
+    position: relative;
+    width: 100%;
+    padding-top: 160%; /* Adjust this to control height ratio */
+  }
+
+  .responsive-form-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
